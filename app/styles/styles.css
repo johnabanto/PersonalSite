@@ -1,0 +1,53 @@
+/*the side navigation menu*/
+.sidenav {
+	height: 100%;
+	width: 0; /*0 width - changes with Javascript*/
+	position: fixed;
+	z-index: 1; /*stay on top*/
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden; /*disables horizontal scroll*/
+	padding-top: 60px;
+	transition: 0.5; /*slide in effect of sidenav*/
+}
+
+/*the navigation menu links*/
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/*mouse over navigation links change their color*/
+.sidenav a:hover .offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+/*position and style of the close button*/
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/*page content when nav slides*/
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+/*style of nav changes with smaller screens where height is less than 450px*/
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
