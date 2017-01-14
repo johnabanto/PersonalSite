@@ -116,6 +116,7 @@ p {
 label {
 	size: 20px;
 	font-weight: bold;
+	letter-spacing: 5px;
 }
 
 h4 {
