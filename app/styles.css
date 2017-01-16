@@ -113,6 +113,12 @@ p {
 	margin-left: -100px;
 }
 
+#blogContainer {
+	position: fixed;
+	height: 100px;
+	float: right;
+}
+
 label {
 	size: 20px;
 	font-weight: bold;
